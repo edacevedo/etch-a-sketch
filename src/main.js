@@ -7,10 +7,13 @@ window.onload = () => {
     for (let index = 0; index < gridSize*gridSize; index++) {
         childItem = document.createElement('div');
         childItem.style.minWidth = `${minWidth}%`;
+        childItem.addEventListener('mouseover', onMouseOverChildItem);
         mainContainer.append(childItem);
     }
 }
 
-document.addEventListener('mouseover', (event) => {
-    console.log(event)
-});
+let onMouseOverChildItem = (event) => {
+    let childItem = event.target;
+    
+    childItem.style.backgroundColor = 'black';
+};
