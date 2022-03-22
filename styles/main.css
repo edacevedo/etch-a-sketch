@@ -8,15 +8,29 @@ body {
     text-align: center;
 }
 
-.main-container {
+#main-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem 5rem 10rem 5rem;
-    height: 70%;
+    margin: auto;
+    margin-bottom: 1rem;
+    min-height: 30rem;
+    max-width: 30rem;
 }
 
-.main-container div {
+#main-container div {
     flex: 1;
     background-color: white;
+}
+
+#commands {
+    display: flex;
+    justify-content: center;
+}
+
+#clear-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border-color: #ccc;
 }
