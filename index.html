@@ -7,14 +7,29 @@
     <title>Etch A Sketch</title>
     <script defer src="./src/main.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="https://kit.fontawesome.com/3764a1c807.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Etch A Sketch</h1>
-    <div id="main-container" class="main-container">
-    </div>
-    <div id="commands">
-        <button id="clear-btn">Clear</button>
+    <div id="main-container">
+        <div id="dash" class="dash">
+        </div>
+        <div id="commands">
+            <button id="resize-btn">
+                <div id="resize-indicator">-</div>
+                <i class="button-item button-item-left">25</i>
+                <i class="button-item button-item-top">50</i>
+                <i class="button-item button-item-rigth">75</i>
+                <i class="button-item button-item-bottom">100</i>
+            </button>
+            <h1>Etch A Sketch</h1>
+            <button id="shape-btn">
+                <div id="shape-indicator">-</div>
+                <i class="button-item button-item-left">
+                    <input id="color-input" type="color">
+                </i>
+                <i class="button-item button-shape-top">Shading</i>
+                <i class="button-item button-shape-rigth">Random</i>
+            </button>
+        </div>
     </div>
 </body>
 </html>
